@@ -42,7 +42,6 @@ public final class BottomButton: UIView {
         button.setTitle(title, for: .disabled)
         button.setTitleColor(.pard.white100, for: .normal)
         button.setTitleColor(.pard.white100, for: .disabled)
-        button.backgroundColor = .pard.gray30
         button.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             button.topAnchor.constraint(equalTo: self.topAnchor),

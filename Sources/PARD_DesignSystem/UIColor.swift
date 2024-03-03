@@ -5,9 +5,9 @@ public extension UIColor {
         self.init(named: colorNamed, in: .module, compatibleWith: nil)
     }
 
-    static let pomodoro = Pomodoro()
+    static let pard = Pard()
 
-    final class Pomodoro: NSObject {
+    final class Pard: NSObject {
         override init() { super.init() }
         
         public let background = UIColor(colorNamed: "background")!

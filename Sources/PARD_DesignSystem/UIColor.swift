@@ -13,16 +13,16 @@ public extension UIColor {
         public let background = UIColor(colorNamed: "primaryBlue")!
 
         // Primary
-        public let primaryGreen = UIColor(colorNamed: "primaryBlue")!
-        public let primaryPurple = UIColor(colorNamed: "primaryBlue")!
+        public let primaryGreen = UIColor(colorNamed: "primaryGreen")!
+        public let primaryPurple = UIColor(colorNamed: "primaryPurple")!
         public let primaryBlue = UIColor(colorNamed: "primaryBlue")!
         
-        public let errorRed = UIColor(colorNamed: "primaryBlue")!
-        public let white100 = UIColor(colorNamed: "primaryBlue")!
-        public let gray10 = UIColor(colorNamed: "primaryBlue")!
-        public let gray30 = UIColor(colorNamed: "primaryBlue")!
-        public let blackCard = UIColor(colorNamed: "primaryBlue")!
-        public let blackBackground = UIColor(colorNamed: "primaryBlue")!
-        public let gra = UIColor(colorNamed: "primaryBlue")!
+        public let errorRed = UIColor(colorNamed: "errorRed")!
+        public let white100 = UIColor(colorNamed: "white100")!
+        public let gray10 = UIColor(colorNamed: "gray10")!
+        public let gray30 = UIColor(colorNamed: "gray30")!
+        public let blackCard = UIColor(colorNamed: "blackCard")!
+        public let blackBackground = UIColor(colorNamed: "blackBackground")!
+        public let gra = UIColor(colorNamed: "gra")!
     }
 }

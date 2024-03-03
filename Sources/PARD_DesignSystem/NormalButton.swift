@@ -22,7 +22,7 @@ public final class NormalButton: UIView {
     public var isEnabled: Bool = true {
         didSet {
             button.isEnabled = isEnabled
-            button.backgroundColor = isEnabled ? .pard.primaryBlue : .pard.gray30.withAlphaComponent(0.2)
+            button.backgroundColor = isEnabled ? .pard.primaryBlue : .pard.gray30
         }
     }
     

@@ -9,8 +9,6 @@ public extension UIColor {
 
     final class Pard: NSObject {
         override init() { super.init() }
-        
-        public let background = UIColor(colorNamed: "background")!
 
         // Primary
         public let primaryBlue = UIColor(colorNamed: "primaryBlue")!

@@ -1,13 +1,13 @@
 //
-//  NormalButton.swift
-//  
+//  BottomButton.swift
+//
 //
 //  Created by 김하람 on 3/3/24.
 //
 
 import UIKit
 
-public final class NormalButton: UIView {
+public final class BottomButton: UIView {
     private let button = UIButton()
     private var didTapHandler: (() -> Void)?
 
@@ -22,13 +22,13 @@ public final class NormalButton: UIView {
     public var isEnabled: Bool = true {
         didSet {
             button.isEnabled = isEnabled
-            button.backgroundColor = isEnabled ? .pard.primaryBlue : .pard.gray30
+            button.backgroundColor = isEnabled ? .pard.gra : .pard.gray30
         }
     }
     
     override public func layoutSubviews() {
         super.layoutSubviews()
-        button.layer.cornerRadius = 4
+        button.layer.cornerRadius = 8
     }
 
     public convenience init(
@@ -49,7 +49,7 @@ public final class NormalButton: UIView {
             button.bottomAnchor.constraint(equalTo: self.bottomAnchor),
             button.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             button.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-//            button.heightAnchor.constraint(equalToConstant: 48)
+//            button.heightAnchor.constraint(equalToConstant: 56)
         ])
         
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)

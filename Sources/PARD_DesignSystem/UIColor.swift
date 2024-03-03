@@ -18,5 +18,6 @@ public extension UIColor {
         public var gray30: UIColor { UIColor(named: "gray30", in: .module, compatibleWith: nil) ?? UIColor.darkGray }
         public var blackCard: UIColor { UIColor(named: "blackCard", in: .module, compatibleWith: nil) ?? UIColor.black }
         public var blackBackground: UIColor { UIColor(named: "blackBackground", in: .module, compatibleWith: nil) ?? UIColor.black }
+        public var gra: UIColor { UIColor(named: "gra", in: .module, compatibleWith: nil) ?? UIColor.black }
     }
 }

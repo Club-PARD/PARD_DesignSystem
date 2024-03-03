@@ -21,7 +21,7 @@ public extension UIColor {
 
         // Primary
         public let primary50 = UIColor(colorNamed: "primaryBlue")!
-//        public let primary100 = UIColor(colorNamed: "primaryRed")!
+        public let primary100 = UIColor(colorNamed: "primaryRed")!
 //        public let primary200 = UIColor(colorNamed: "primary200")!
 //        public let primary300 = UIColor(colorNamed: "primary300")!
 //        public let primary400 = UIColor(colorNamed: "primary400")!

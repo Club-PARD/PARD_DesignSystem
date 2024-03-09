@@ -33,13 +33,15 @@ public final class NormalButton: UIView {
 
     public convenience init(
         title: String,
-        didTapHandler: @escaping () -> Void
+        didTapHandler: @escaping () -> Void,
+        font: UIFont
     ) {
         self.init(frame: .zero)
         self.isUserInteractionEnabled = true
         self.addSubview(button)
         button.setTitle(title, for: .normal)
         button.setTitle(title, for: .disabled)
+        button.titleLabel?.font = font
         button.setTitleColor(.pard.white100, for: .normal)
         button.setTitleColor(.pard.white100, for: .disabled)
         button.backgroundColor = isEnabled ? .pard.primaryBlue : .pard.gray30
@@ -48,8 +50,7 @@ public final class NormalButton: UIView {
             button.topAnchor.constraint(equalTo: self.topAnchor),
             button.bottomAnchor.constraint(equalTo: self.bottomAnchor),
             button.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            button.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-//            button.heightAnchor.constraint(equalToConstant: 48)
+            button.trailingAnchor.constraint(equalTo: self.trailingAnchor)
         ])
         
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)

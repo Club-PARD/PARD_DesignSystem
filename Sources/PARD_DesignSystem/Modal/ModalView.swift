@@ -48,7 +48,9 @@ final class PardModalView: UIStackView {
         dismissAction: (() -> Void)?
     ) {
         self.titleLabel.text = title
+        self.titleLabel.textColor = .pard.gra
         self.bodyLabel.text = body
+        self.bodyLabel.textColor = .white
         self.dismissAction = dismissAction
         switch button {
         case .confirm(let title, let action):
@@ -138,11 +140,11 @@ final class PardModalView: UIStackView {
         confirmButton.addTarget(self, action: #selector(didTapRightButton), for: .touchUpInside)
 
         buttonsStackView.translatesAutoresizingMaskIntoConstraints = false
-        buttonsStackView.spacing = 7
-        buttonsStackView.heightAnchor.constraint(equalToConstant: 48).isActive = true
+        buttonsStackView.spacing = 16
+        buttonsStackView.heightAnchor.constraint(equalToConstant: 44).isActive = true
         buttonsStackView.distribution = .fillEqually
-        buttonsStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20).isActive = true
-        buttonsStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
+        buttonsStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40).isActive = true
+        buttonsStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40).isActive = true
     }
 
     private func setupLabels() {

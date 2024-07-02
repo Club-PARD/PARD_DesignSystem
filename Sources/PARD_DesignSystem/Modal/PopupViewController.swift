@@ -40,7 +40,7 @@ final class ModalViewController: UIViewController {
         dimmedView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         dimmedView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         dimmedView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        dimmedView.backgroundColor = UIColor.black.withAlphaComponent(0.2)
+        dimmedView.backgroundColor = UIColor.black.withAlphaComponent(0.3)
 
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapDimmedArea))
         dimmedView.addGestureRecognizer(tapGesture)
@@ -49,8 +49,8 @@ final class ModalViewController: UIViewController {
         modalView.translatesAutoresizingMaskIntoConstraints = false
         modalView.centerXAnchor.constraint(equalTo: dimmedView.centerXAnchor).isActive = true
         modalView.centerYAnchor.constraint(equalTo: dimmedView.centerYAnchor).isActive = true
-        modalView.leadingAnchor.constraint(equalTo: dimmedView.leadingAnchor, constant: 30).isActive = true
-        modalView.trailingAnchor.constraint(equalTo: dimmedView.trailingAnchor, constant: -30).isActive = true
+        modalView.leadingAnchor.constraint(equalTo: dimmedView.leadingAnchor, constant: 24).isActive = true
+        modalView.trailingAnchor.constraint(equalTo: dimmedView.trailingAnchor, constant: -24).isActive = true
     }
 
     @objc func didTapDimmedArea() {

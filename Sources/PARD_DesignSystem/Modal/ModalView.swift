@@ -124,14 +124,14 @@ final class PardModalView: UIStackView {
 
     private func setupButtons() {
         cancelButton.layer.cornerRadius = 30
-        confirmButton.titleLabel?.font = .systemFont(ofSize: 20)
+        confirmButton.titleLabel?.font = .systemFont(ofSize: 16)
         cancelButton.backgroundColor = .pard.blackCard
         cancelButton.tintColor = .pard.gray30
         cancelButton.setTitleColor(.white, for: .normal)
         cancelButton.addTarget(self, action: #selector(didTapLeftButton), for: .touchUpInside)
 
         confirmButton.layer.cornerRadius = 30
-        confirmButton.titleLabel?.font = .systemFont(ofSize: 20)
+        confirmButton.titleLabel?.font = .systemFont(ofSize: 16)
         confirmButton.backgroundColor = .pard.gra
         confirmButton.tintColor = .white
         confirmButton.setTitleColor(.white, for: .normal)

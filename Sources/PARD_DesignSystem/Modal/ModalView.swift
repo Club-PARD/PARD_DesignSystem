@@ -103,11 +103,13 @@ final class PardModalView: UIStackView {
 
     private func setupContainerStackView() {
         addGestureRecognizer(UITapGestureRecognizer())
-        backgroundColor = .black
+        backgroundColor = .pard.blackBackground
         isLayoutMarginsRelativeArrangement = true
         directionalLayoutMargins = .init(top: 20, leading: 20, bottom: 20, trailing: 20)
         alignment = .center
-        layer.cornerRadius = 24
+        layer.cornerRadius = 8
+        layer.borderColor = UIColor.pard.gra.cgColor
+        layer.borderWidth = 1
         spacing = 30
         axis = .vertical
     }
@@ -121,15 +123,17 @@ final class PardModalView: UIStackView {
     }
 
     private func setupButtons() {
-        cancelButton.layer.cornerRadius = 12.8
-        cancelButton.titleLabel?.font = .systemFont(ofSize: 20)
-        cancelButton.backgroundColor = .black
+        cancelButton.layer.cornerRadius = 30
+        confirmButton.titleLabel?.font = .systemFont(ofSize: 16)
+        cancelButton.backgroundColor = .pard.blackCard
+        cancelButton.tintColor = .pard.gray30
         cancelButton.setTitleColor(.white, for: .normal)
         cancelButton.addTarget(self, action: #selector(didTapLeftButton), for: .touchUpInside)
 
-        confirmButton.layer.cornerRadius = 12.8
-        confirmButton.titleLabel?.font = .systemFont(ofSize: 20)
-        confirmButton.backgroundColor = .black
+        confirmButton.layer.cornerRadius = 30
+        confirmButton.titleLabel?.font = .systemFont(ofSize: 16)
+        confirmButton.backgroundColor = .pard.gra
+        confirmButton.tintColor = .white
         confirmButton.setTitleColor(.white, for: .normal)
         confirmButton.addTarget(self, action: #selector(didTapRightButton), for: .touchUpInside)
 
